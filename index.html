@@ -29,14 +29,19 @@
         </li>
       </ul>
 
-      <form class="to-do-form">
-        <input type="text" placeholder="What to do?" class="to-do-form__input">
-        <textarea name="" id="" cols="50" rows="5" placeholder="Explain your task..." class="to-do-form__input" ></textarea>
-        <button class="to-do-form__button">Add to list</button>
-      </form>
+      <div class="to-do-form-wrapper" id="to-do-form-wrapper">
+        <form class="to-do-form">
+          <input type="text" placeholder="What to do?" class="to-do-form__input">
+          <textarea name="" id="" cols="50" rows="5" placeholder="Explain your task..." class="to-do-form__input"></textarea>
+          <div>
+            <button class="to-do-form__button to-do-form__button--primary" type="button">Add to list</button>
+            <button class="to-do-form__button to-do-form__button--danger" id="to-do-close-button" type="button">Close</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <button class="to-do-add-button">+</button>
+    <button id="to-do-add-button">+</button>
   </main>
   <!-- scripts -->
   <script src="src/js/to-do.js"></script>
