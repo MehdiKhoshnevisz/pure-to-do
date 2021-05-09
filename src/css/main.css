@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: 1140px;
+}
+
+/* text styles */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* main page */
+.to-do-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.to-do-add-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: #2196f3;
+  border-radius: 0.2rem;
+}
+
+/* to-do element */
+.to-do-wrapper {
+  padding: 0;
+  list-style-type: none;
+}
+
+.to-do-element {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  background: aliceblue;
+}
+
+.to-do-element__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.to-do-element__description {
+  margin-top: 0;
+  /* margin-bottom: 0.5rem; */
+}
+
+/* to-do form */
+.to-do-form {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  background: aliceblue;
+}
+
+.to-do-form__input {
+  border: none;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+  border-radius: 0.3rem;
+}
+
+.to-do-form__input:last-child {
+  margin-bottom: 0;
+}
+
+.to-do-form__button {
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  background: #03a9f4;
+  color: white;
+  border-radius: 0.3rem;
+}

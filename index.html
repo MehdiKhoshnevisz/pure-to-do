@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- meta -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="src/css/main.css">
+
   <title>PURE TO-DO</title>
 </head>
 <body>
-  <h1>Welcome to <mark>PURE TO-DO</mark> App</h1>
+  <main class="container">
+    <h1 class="to-do-title">PURE TO-DO</h1>
+
+    <div>
+      <ul class="to-do-wrapper">
+        <li class="to-do-element">
+          <div>
+            <h2 class="to-do-element__title">Title is here</h2>
+            <p class="to-do-element__description">Description is here and some blah blah blah..</p>
+          </div>
+          <div>
+            <span>edit</span>
+            <span>delete</span>
+          </div>
+        </li>
+      </ul>
+
+      <form class="to-do-form">
+          <input type="text" placeholder="What to do?" class="to-do-form__input">
+          <textarea name="" id="" cols="50" rows="5" placeholder="Explain your task..." class="to-do-form__input" ></textarea>
+          <button class="to-do-form__button">Add to list</button>
+      </form>
+    </div>
+
+    <button class="to-do-add-button">+</button>
+  </main>
+  <!-- scripts -->
+  <script src="src/js/to-do.js"></script>
 </body>
 </html>
