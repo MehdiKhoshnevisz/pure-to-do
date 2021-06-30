@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- meta -->
   <meta charset="UTF-8">
@@ -11,20 +12,21 @@
 
   <title>PURE TO-DO</title>
 </head>
+
 <body>
   <main class="container">
     <h1 class="to-do-title">PURE TO-DO</h1>
 
     <div>
       <ul class="to-do-wrapper">
-        <li class="to-do-element">
+        <li class="to-do-element" data-id="0">
           <div>
             <h2 class="to-do-element__title">Title is here</h2>
             <p class="to-do-element__description">Description is here and some blah blah blah..</p>
           </div>
           <div>
-            <span class="to-do-element__edit">Edit</span>
-            <span class="to-do-element__remove">Remove</span>
+            <span class="to-do-element__edit" data-id="0">Edit</span>
+            <span class="to-do-element__remove" data-id="0">Remove</span>
           </div>
         </li>
       </ul>
@@ -32,10 +34,16 @@
       <div class="to-do-form-wrapper" id="to-do-form-wrapper">
         <form class="to-do-form">
           <input type="text" placeholder="What to do?" class="to-do-form__input" id="to-do-form-title">
-          <textarea cols="50" rows="5" placeholder="Explain your task..." class="to-do-form__input" id="to-do-form-description"></textarea>
+          <textarea cols="50" rows="5" placeholder="Explain your task..." class="to-do-form__input"
+            id="to-do-form-description"></textarea>
           <div>
-            <button class="to-do-form__button to-do-form__button--primary" id="to-do-add-to-list-button" type="button">Add to list</button>
-            <button class="to-do-form__button to-do-form__button--danger" id="to-do-close-button" type="button">Close</button>
+            <button class="to-do-form__button to-do-form__button--primary" id="to-do-add-to-list-button"
+              type="button">Add To List</button>
+            <button class="to-do-form__button to-do-form__button--primary" id="to-do-edit-list-item-button"
+              type="button">Accept
+              Changes</button>
+            <button class="to-do-form__button to-do-form__button--danger" id="to-do-close-button"
+              type="button">Cancel</button>
           </div>
         </form>
       </div>
@@ -44,6 +52,7 @@
     <button id="to-do-add-button">+</button>
   </main>
   <!-- scripts -->
-  <script src="src/js/to-do.js" ></script>
+  <script src="src/js/to-do.js"></script>
 </body>
+
 </html>

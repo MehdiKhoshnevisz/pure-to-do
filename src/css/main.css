@@ -139,3 +139,8 @@ body {
 .to-do-form__button--danger {
   background: #e91e63;
 }
+
+#to-do-add-to-list-button,
+#to-do-edit-list-item-button {
+  display: none;
+}
